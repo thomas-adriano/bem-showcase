@@ -1,0 +1,42 @@
+@import "../settings/tokens";
+@import "../settings/measures";
+
+.o-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.o-page--grid {
+    display: grid;
+    grid: [row1-start] "header-corner header header" $header-height [row1-end]
+          [row2-start] "sidebar body body" 1fr [row2-end]
+          [row3-start] "footer footer footer" $footer-height [row3-end]
+                      / $sidebar-width   1fr   1fr;
+
+}
+
+.o-page--grid__header-corner {
+    grid-area: header-corner;
+    background-color: $terciary-bg-color;
+}
+
+.o-page--grid__header {
+    grid-area: header;
+    background-color: $primary-bg-color;
+}
+
+.o-page--grid__sidebar {
+    grid-area: sidebar;
+    background-color: $secondary-bg-color;
+}
+
+.o-page--grid__body {
+    grid-area: body;
+    padding: 1rem;
+}
+
+.o-page--grid__footer {
+    grid-area: footer;
+    align-self: center;
+    justify-self: center;
+}

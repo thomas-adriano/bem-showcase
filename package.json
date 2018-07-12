@@ -1,0 +1,23 @@
+{
+  "name": "bem-showcase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./scripts/build-sass.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas-adriano/bem-showcase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomas-adriano/bem-showcase/issues"
+  },
+  "homepage": "https://github.com/thomas-adriano/bem-showcase#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
